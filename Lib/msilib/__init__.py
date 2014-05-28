@@ -291,6 +291,7 @@ class Directory:
             prefix = "".join(parts[:-1]).upper()
         else:
             suffix = None
+            prefix = file.upper()
         file = None
         if len(parts)<3 and len(prefix)<=8 and (not suffix or len(suffix)<=3):
             if suffix:
